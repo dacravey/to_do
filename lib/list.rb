@@ -23,6 +23,6 @@ class List
     end
 
     define_method(:==) do |another_list|
-      self.name().==(another_list_name()).&(self.id().==(another_list_id()))
+      self.name().==(another_list.name()).&(self.id().==(another_list.id()))
     end
   end
