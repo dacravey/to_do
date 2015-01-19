@@ -1,8 +1,8 @@
+# require("spec_helper")
+
 require('rspec')
 require('pg')
 require('task')
-
-
 
 DB = PG.connect({:dbname => 'to_do_test'})
 
@@ -49,21 +49,3 @@ describe(Task) do
     end
   end
 end
-
-
-
-
-
-  #
-
-  #
-
-  #
-  # describe('#clear') do
-  #   it("empties out all of the saved tasks.") do
-  #     Task.new("wash the lion").save()
-  #     Task.clear()
-  #     expect(Task.all()).to eq([])
-  #   end
-  # end
-# end
