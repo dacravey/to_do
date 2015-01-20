@@ -26,3 +26,8 @@ class Task
     self.description().==(another_task.description()).&(self.list_id().==(another_task.list_id()))
   end
 end
+
+# 
+# define_singleton_method(:clear) do
+#   @@all_tasks = []
+# end
